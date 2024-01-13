@@ -1,0 +1,11 @@
+.tile-game{
+  display: flex;
+}
+
+
+
+@media (max-width:500px){
+  .tile-game{
+    flex-direction: column;
+  }
+}

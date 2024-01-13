@@ -1,0 +1,106 @@
+body {
+  background-color: rgba(0, 0, 0);
+  color: white;
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.panel {
+  width: 100%;
+  max-width: 300px;
+  border-right: 1px solid rgb(79, 77, 77);
+  padding-right: 10px;
+}
+
+.game {
+  flex-grow: 1;
+}
+
+.grids {
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  width: fit-content;
+  margin-inline: auto;
+  margin-block: 10px;
+  border: 1px solid #ffffff40;
+  border-radius: 4px;
+  padding: 3px;
+}
+
+.grid {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 192, 203, 0.366);
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.sec-heading {
+  padding-bottom: 5px;
+}
+
+.levels {
+  width: 100%;
+}
+
+.sec {
+  margin-block: 20px;
+}
+
+select {
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+
+.controlls {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.speed-count {
+  flex-grow: 1;
+}
+
+.btn {
+  min-width: 50px;
+  cursor: pointer;
+}
+
+.action {
+  flex-grow: 1;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.action.active {
+  opacity: 0.6;
+}
+
+.pattern-input {
+  max-width: 50px;
+}
+
+.score-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 320px;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.score span {
+  font-size: 16px;
+  font-weight: bold;
+}
